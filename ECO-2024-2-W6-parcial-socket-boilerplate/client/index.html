@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marco Polo Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #game-container {
+        margin-top: 20px;
+      }
+      button {
+        margin: 5px;
+        padding: 10px;
+      }
+      #marco-button, #polo-button {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Marco Polo Real-Time Game</h1>
+    <div id="game-container">
+      <button id="join-button">Join Game</button>
+      <button id="start-button">Start Game</button>
+      <button id="marco-button">Shout Marco!</button>
+      <button id="polo-button">Shout Polo!</button>
+      <h3 id="game-status"></h3>
+      <h3 id="role"></h3>
+      <ul id="players-list"></ul>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
